@@ -1,0 +1,15 @@
+ <nav class="nav">
+      <span class="brand">Binimoi Crockeries Online Shop</span>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/cart"><i class="bi bi-cart"></i> Cart</a></li>
+        @if(Model.authenticated){
+            <li><a href="/logout">Logout</a></li>
+        }
+        else
+        {
+            <li><a href="/register">Register</a></li> 
+            <li><a href="/login">Login</a></li> 
+        }
+      </ul>
+</nav>
